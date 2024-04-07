@@ -10,6 +10,15 @@ maximum = array[i];
 return maximum;
 }
 
+public static int minimum(int [] array){
+int minimum = Integer.MAX_VALUE;
+for (int i = 0; i < array.length; i++){
+if (array[i] < minimum){
+minimum = array[i];
+}
+}
+return minimum;
+}
 
 
 }

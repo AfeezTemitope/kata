@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Maximum{
+public class Minimum{
 public static void main(String... args){
 Scanner scanner = new Scanner(System.in);
 
@@ -12,9 +12,9 @@ System.out.print("enter integer " + (i + 1) + ":");
 array[i] = scanner.nextInt();
 }
 
-int maximum = ArrayKata.maximum(array);
+int minimum = ArrayKata.minimum(array);
 
-System.out.print("the maximum value of this array is " + maximum);
+System.out.print("the minimum value of this array is " + minimum);
 		
 
 
