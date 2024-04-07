@@ -28,4 +28,17 @@ public static int factor(int a){
   return count;
 }
 
+public static boolean square(int number){
+double sqrt = Math.sqrt(number);
+if ( sqrt % 2 == 0){
+return true; 
+}
+return false;
+}
+
+
+
+
+
+
 }
