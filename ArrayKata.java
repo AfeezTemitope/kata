@@ -38,7 +38,13 @@ total += array[i];
 return total;
 }
 
-
+public static boolean isSquare(int number){
+double sqrt = Math.sqrt(number);
+if ( sqrt % 2 == 0){
+return true; 
+}
+return false;
+}
 
 
 }
