@@ -31,10 +31,14 @@ return sum;
 }
 
 public static int isSumEven(int [] array){
-int sum = 0;
+int total = 0;
 for (int i = 2; i < array.length; i+=2){
-sum += array[i];
+total += array[i];
 }
-return sum;
+return total;
 }
+
+
+
+
 }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class IsSumEven{
+public class MaxMin{
 public static void main(String... args){
 Scanner scanner = new Scanner(System.in);
 
@@ -8,13 +8,14 @@ int number = scanner.nextInt();
 int[] array = new int[number];
 
 for (int i = 0; i < number; i++){
-System.out.print("enter integer " ); 
+System.out.print("enter integer " + (i + 1) + ":"); 
 array[i] = scanner.nextInt();
 }
 
-int total = ArrayKata.isSumEven(array);
+int minimum = ArrayKata.minimum(array);
+int maximum = ArrayKata.maximum(array);
 
-System.out.print(total);
+System.out.print("the minimum and maximum value of this array are " + minimum + " and "  +  maximum);
 		
 
 
