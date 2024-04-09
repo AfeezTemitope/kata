@@ -46,5 +46,24 @@ return true;
 return false;
 }
 
+public static int isOdd(int [] array){
+int sum = 0;
+for(int i = 1; i < array.length; i+=2){
+if ( i % 2 != 0){
+sum ++;
+}
+
+}
+return sum;
+}
+
+public static int[] squareNumbersIn(int[] numbers) {
+        int[] result = new int[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            doubles result= Math.sqrt(numbers[i], i);
+        }
+        return result;
+    }
+
 
 }
