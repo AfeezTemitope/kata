@@ -1,25 +1,19 @@
-# include <stdio.h>
+#include <stdio.h>
+
+int factorial(int x);
 
 
 int main() {
     int x;
-    int result = 1;
-
  
 	printf("Enter the dividend: ");
     	scanf("%d", &x);
 
-	for (int i = 1; i <= x; i++){
 
-	result *= i;
+    int number = factorial(x);    
+        printf("%d", number );
+	return 0;
 }
-    
 
 
-        
-        printf("%d", result);
-	
 
-
-    return 0;
-}
