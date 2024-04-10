@@ -89,5 +89,12 @@ count++;
     return count;
 }
 
-
+public static int[] MaximumAndMinimum(int[] numbers){
+int minimum = numbers[0]; int maximum = numbers[0];
+for (int number : numbers){ 
+if(number < minimum ){
+minimum = number; } if (number > maximum){
+maximum = number;}
+} return new int []{minimum, maximum};
+}
 }
