@@ -39,10 +39,11 @@ return true;
 return false;
 }
 
-public static int isOdd(int[] array) {
+public static int noOfOddNumbersIn(int[] array) {
 int count = 0;
 for (int num : array) {
 if (num % 2 != 0) {
+System.out.print(num + " ");
 count++;
         }
     }
@@ -58,25 +59,17 @@ public static double[] squareNumbersIn(int[] numbers) {
     return result;
 }
 
-
-public static int evenNumberIn(int[] number) {
-int countEven = 0;
-for (int i = 0; i < number.length; i++) {
-if (number[i] % 2 == 0) {
-countEven++;
-}
-    }
-int[] evenNumbers = new int[countEven];
-int index = 0;
-for (int i = 0; i < number.length; i++) {
-if (number[i] % 2 == 0) {
-evenNumbers[index] = number[i];
-index++;
+public static int noOfEvenNumbersIn(int[] array) {
+int count = 0;
+for (int num : array) {
+if (num % 2 == 0) {
+System.out.print(num + " ");
+count++;
         }
     }
-
-return evenNumbers;
+    return count;
 }
+
 
 
 }
