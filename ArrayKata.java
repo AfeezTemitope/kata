@@ -20,23 +20,16 @@ minimum = array[i];
 return minimum;
 }
 
-public static int isSum(int [] array){
-int sum = 0;
-for (int i = 0; i < array.length; i++){
-
-sum += array[i];
-}
-
-return sum;
-}
-
-public static int isSumEven(int [] array){
+public static int isSumEven(int[] array) {
 int total = 0;
-for (int i = 2; i < array.length; i+=2){
-total += array[i];
+for (int num : array) {
+if (num % 2 == 0) {
+total += num;
+        }
+    }
+    return total;
 }
-return total;
-}
+
 
 public static boolean isSquare(int number){
 double sqrt = Math.sqrt(number);
@@ -46,24 +39,44 @@ return true;
 return false;
 }
 
-public static int isOdd(int [] array){
-int sum = 0;
-for(int i = 1; i < array.length; i+=2){
-if ( i % 2 != 0){
-sum ++;
-}
-
-}
-return sum;
-}
-
-public static int[] squareNumbersIn(int[] numbers) {
-        int[] result = new int[numbers.length];
-        for (int i = 0; i < numbers.length; i++) {
-            doubles result= Math.sqrt(numbers[i], i);
+public static int isOdd(int[] array) {
+int count = 0;
+for (int num : array) {
+if (num % 2 != 0) {
+count++;
         }
-        return result;
     }
+    return count;
+}
+
+
+public static double[] squareNumbersIn(int[] numbers) {
+    double[] result = new double[numbers.length];
+    for (int i = 0; i < numbers.length; i++) {
+        result[i] = Math.sqrt(numbers[i]);
+    }
+    return result;
+}
+
+
+public static int evenNumberIn(int[] number) {
+int countEven = 0;
+for (int i = 0; i < number.length; i++) {
+if (number[i] % 2 == 0) {
+countEven++;
+}
+    }
+int[] evenNumbers = new int[countEven];
+int index = 0;
+for (int i = 0; i < number.length; i++) {
+if (number[i] % 2 == 0) {
+evenNumbers[index] = number[i];
+index++;
+        }
+    }
+
+return evenNumbers;
+}
 
 
 }
