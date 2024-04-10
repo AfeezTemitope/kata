@@ -69,7 +69,25 @@ count++;
     }
     return count;
 }
+public static int countOfEvenNumbersIn(int[] array) {
+int count = 0;
+for (int num : array) {
+if (num % 2 == 0) {
+count++;
+        }
+    }
+    return count;
+}
 
+public static int countOfOddNumbersIn(int[] array) {
+int count = 0;
+for (int num : array) {
+if (num % 2 != 0) {
+count++;
+        }
+    }
+    return count;
+}
 
 
 }

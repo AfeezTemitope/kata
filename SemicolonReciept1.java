@@ -47,9 +47,12 @@ do{
             
 	    
             System.out.println(product.quantity + "\t" + product.price + "\t" + product.name + "\t" + "\t" + product.price * product.quantity);
-	     System.out.println("****************************************");
+	    
         }
+	 System.out.println("****************************************");
 	double discount = totalPrice - ( totalPrice * 0.75)/100;
+	double VAT = (totalPrice * 0.075);
+  System.out.println( 
   System.out.println("SubTotal: " + totalPrice); 
   System.out.println("Discounted Price: " + discount); 
     }
