@@ -6,6 +6,7 @@ public class RiderWageCaculations{
         List<Object> result = new ArrayList<>();
         
         String continueInput = "Y";
+	
 
         while (continueInput.equalsIgnoreCase("Y")){
 
@@ -15,15 +16,11 @@ public class RiderWageCaculations{
 
             int ridersPayment = RidersWage.calculateRiderWage(successfulDeliveries);
 
-
-            if (successfulDeliveries >= 100){
+	   
+            String testResult = (successfulDeliveries >= 100) ? "Test Result (Successful)" : "Test Result (Failed)";
                 
 	    result.add("Delivery " + successfulDeliveries + " Test result (successful) : " + ridersPayment  );
 
-            } else { 
-                
-	    result.add("Delivery " + successfulDeliveries + " Test result (failed) : " + ridersPayment  );
-            }
             System.out.println("Do you want to enter more deliveries? (y/n)");
             continueInput = scanner.nextLine();
 	    }
